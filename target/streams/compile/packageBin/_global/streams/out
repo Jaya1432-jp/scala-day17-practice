@@ -1,0 +1,7 @@
+[debug] Packaging /home/jayaprakash/scala-day17/target/scala-2.13/scala-spark-day17-practice_2.13-0.1.0-SNAPSHOT.jar ...
+[debug] Input file mappings:
+[debug] 	Day17.class
+[debug] 	  /home/jayaprakash/scala-day17/target/scala-2.13/classes/Day17.class
+[debug] 	Day17$.class
+[debug] 	  /home/jayaprakash/scala-day17/target/scala-2.13/classes/Day17$.class
+[debug] Done packaging.

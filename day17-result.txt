@@ -1,0 +1,169 @@
+[info] welcome to sbt 1.10.11 (Ubuntu Java 17.0.20.1)
+[info] loading project definition from /home/jayaprakash/scala-day17/project
+[info] loading settings for project root from build.sbt...
+[info] set current project to Scala-Spark-Day17-Practice (in build file:/home/jayaprakash/scala-day17/)
+[success] Total time: 0 s, completed Oct 7, 2026, 4:23:15 AM
+[info] compiling 1 Scala source to /home/jayaprakash/scala-day17/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) Day17 
+[error] Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+[error] 26/10/07 04:23:22 WARN Utils: Your hostname, RAVI resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+[error] 26/10/07 04:23:22 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[error] 26/10/07 04:23:23 INFO SparkContext: Running Spark version 3.5.6
+[error] 26/10/07 04:23:23 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+[error] 26/10/07 04:23:23 INFO SparkContext: Java version 17.0.20.1
+[error] 26/10/07 04:23:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[error] 26/10/07 04:23:23 INFO ResourceUtils: ==============================================================
+[error] 26/10/07 04:23:23 INFO ResourceUtils: No custom resources configured for spark.driver.
+[error] 26/10/07 04:23:23 INFO ResourceUtils: ==============================================================
+[error] 26/10/07 04:23:23 INFO SparkContext: Submitted application: Scala Spark Day 17 - Window Functions
+[error] 26/10/07 04:23:23 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[error] 26/10/07 04:23:23 INFO ResourceProfile: Limiting resource is cpu
+[error] 26/10/07 04:23:23 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[error] 26/10/07 04:23:23 INFO SecurityManager: Changing view acls to: jayaprakash
+[error] 26/10/07 04:23:23 INFO SecurityManager: Changing modify acls to: jayaprakash
+[error] 26/10/07 04:23:23 INFO SecurityManager: Changing view acls groups to: 
+[error] 26/10/07 04:23:23 INFO SecurityManager: Changing modify acls groups to: 
+[error] 26/10/07 04:23:23 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: jayaprakash; groups with view permissions: EMPTY; users with modify permissions: jayaprakash; groups with modify permissions: EMPTY
+[error] 26/10/07 04:23:23 INFO Utils: Successfully started service 'sparkDriver' on port 43563.
+[error] 26/10/07 04:23:23 INFO SparkEnv: Registering MapOutputTracker
+[error] 26/10/07 04:23:23 INFO SparkEnv: Registering BlockManagerMaster
+[error] 26/10/07 04:23:23 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[error] 26/10/07 04:23:23 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[error] 26/10/07 04:23:23 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[error] 26/10/07 04:23:23 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-8ebea1c9-29bc-4c9f-8b82-c82b41e0de64
+[error] 26/10/07 04:23:23 INFO MemoryStore: MemoryStore started with capacity 994.8 MiB
+[error] 26/10/07 04:23:23 INFO SparkEnv: Registering OutputCommitCoordinator
+[error] 26/10/07 04:23:24 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[error] 26/10/07 04:23:24 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[error] 26/10/07 04:23:24 INFO Executor: Starting executor ID driver on host 10.255.255.254
+[error] 26/10/07 04:23:24 INFO Executor: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+[error] 26/10/07 04:23:24 INFO Executor: Java version 17.0.20.1
+[error] 26/10/07 04:23:24 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[error] 26/10/07 04:23:24 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@4ce94d2f for default.
+[error] 26/10/07 04:23:24 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39913.
+[error] 26/10/07 04:23:24 INFO NettyBlockTransferService: Server created on 10.255.255.254:39913
+[error] 26/10/07 04:23:24 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[error] 26/10/07 04:23:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.255.255.254, 39913, None)
+[error] 26/10/07 04:23:24 INFO BlockManagerMasterEndpoint: Registering block manager 10.255.255.254:39913 with 994.8 MiB RAM, BlockManagerId(driver, 10.255.255.254, 39913, None)
+[error] 26/10/07 04:23:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.255.255.254, 39913, None)
+[error] 26/10/07 04:23:24 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.255.255.254, 39913, None)
+[info] ===== DAY 17 - WINDOW FUNCTIONS =====
+[info] --- Student Data ---
+[info] +------+-------+-----+----------+
+[info] |course|student|score| exam_date|
+[info] +------+-------+-----+----------+
+[info] | Spark|   Jaya|   92|2026-09-01|
+[info] | Spark|   Ravi|   85|2026-09-01|
+[info] | Spark|Prakash|   92|2026-09-02|
+[info] | Spark|   Anil|   78|2026-09-02|
+[info] | Scala|   Jaya|   88|2026-09-01|
+[info] | Scala|   Ravi|   95|2026-09-02|
+[info] | Scala|Prakash|   88|2026-09-03|
+[info] | Scala|   Anil|   76|2026-09-03|
+[info] |   SQL|   Jaya|   90|2026-09-01|
+[info] |   SQL|   Ravi|   82|2026-09-02|
+[info] |   SQL|Prakash|   96|2026-09-03|
+[info] |   SQL|   Anil|   82|2026-09-04|
+[info] +------+-------+-----+----------+
+[info] --- ROW_NUMBER ---
+[info] +------+-------+-----+----------+----------+
+[info] |course|student|score| exam_date|row_number|
+[info] +------+-------+-----+----------+----------+
+[info] |   SQL|Prakash|   96|2026-09-03|         1|
+[info] |   SQL|   Jaya|   90|2026-09-01|         2|
+[info] |   SQL|   Ravi|   82|2026-09-02|         3|
+[info] |   SQL|   Anil|   82|2026-09-04|         4|
+[info] | Scala|   Ravi|   95|2026-09-02|         1|
+[info] | Scala|   Jaya|   88|2026-09-01|         2|
+[info] | Scala|Prakash|   88|2026-09-03|         3|
+[info] | Scala|   Anil|   76|2026-09-03|         4|
+[info] | Spark|   Jaya|   92|2026-09-01|         1|
+[info] | Spark|Prakash|   92|2026-09-02|         2|
+[info] | Spark|   Ravi|   85|2026-09-01|         3|
+[info] | Spark|   Anil|   78|2026-09-02|         4|
+[info] +------+-------+-----+----------+----------+
+[info] --- RANK ---
+[info] +------+-------+-----+----------+----+
+[info] |course|student|score| exam_date|rank|
+[info] +------+-------+-----+----------+----+
+[info] |   SQL|Prakash|   96|2026-09-03|   1|
+[info] |   SQL|   Jaya|   90|2026-09-01|   2|
+[info] |   SQL|   Ravi|   82|2026-09-02|   3|
+[info] |   SQL|   Anil|   82|2026-09-04|   3|
+[info] | Scala|   Ravi|   95|2026-09-02|   1|
+[info] | Scala|   Jaya|   88|2026-09-01|   2|
+[info] | Scala|Prakash|   88|2026-09-03|   2|
+[info] | Scala|   Anil|   76|2026-09-03|   4|
+[info] | Spark|   Jaya|   92|2026-09-01|   1|
+[info] | Spark|Prakash|   92|2026-09-02|   1|
+[info] | Spark|   Ravi|   85|2026-09-01|   3|
+[info] | Spark|   Anil|   78|2026-09-02|   4|
+[info] +------+-------+-----+----------+----+
+[info] --- DENSE_RANK ---
+[info] +------+-------+-----+----------+----------+
+[info] |course|student|score| exam_date|dense_rank|
+[info] +------+-------+-----+----------+----------+
+[info] |   SQL|Prakash|   96|2026-09-03|         1|
+[info] |   SQL|   Jaya|   90|2026-09-01|         2|
+[info] |   SQL|   Ravi|   82|2026-09-02|         3|
+[info] |   SQL|   Anil|   82|2026-09-04|         3|
+[info] | Scala|   Ravi|   95|2026-09-02|         1|
+[info] | Scala|   Jaya|   88|2026-09-01|         2|
+[info] | Scala|Prakash|   88|2026-09-03|         2|
+[info] | Scala|   Anil|   76|2026-09-03|         3|
+[info] | Spark|   Jaya|   92|2026-09-01|         1|
+[info] | Spark|Prakash|   92|2026-09-02|         1|
+[info] | Spark|   Ravi|   85|2026-09-01|         2|
+[info] | Spark|   Anil|   78|2026-09-02|         3|
+[info] +------+-------+-----+----------+----------+
+[info] --- TOP 3 STUDENTS PER COURSE ---
+[info] +------+-------+-----+----------+----+
+[info] |course|student|score| exam_date|rank|
+[info] +------+-------+-----+----------+----+
+[info] |   SQL|Prakash|   96|2026-09-03|   1|
+[info] |   SQL|   Jaya|   90|2026-09-01|   2|
+[info] |   SQL|   Ravi|   82|2026-09-02|   3|
+[info] |   SQL|   Anil|   82|2026-09-04|   3|
+[info] | Scala|   Ravi|   95|2026-09-02|   1|
+[info] | Scala|   Jaya|   88|2026-09-01|   2|
+[info] | Scala|Prakash|   88|2026-09-03|   2|
+[info] | Scala|   Anil|   76|2026-09-03|   3|
+[info] | Spark|   Jaya|   92|2026-09-01|   1|
+[info] | Spark|Prakash|   92|2026-09-02|   1|
+[info] | Spark|   Ravi|   85|2026-09-01|   2|
+[info] | Spark|   Anil|   78|2026-09-02|   3|
+[info] +------+-------+-----+----------+----+
+[info] --- LAG AND LEAD ---
+[info] +------+-------+-----+----------+--------------+----------+
+[info] |course|student|score| exam_date|previous_score|next_score|
+[info] +------+-------+-----+----------+--------------+----------+
+[info] | Spark|   Anil|   78|2026-09-02|          NULL|        76|
+[info] | Scala|   Anil|   76|2026-09-03|            78|        82|
+[info] |   SQL|   Anil|   82|2026-09-04|            76|      NULL|
+[info] | Spark|   Jaya|   92|2026-09-01|          NULL|        88|
+[info] | Scala|   Jaya|   88|2026-09-01|            92|        90|
+[info] |   SQL|   Jaya|   90|2026-09-01|            88|      NULL|
+[info] | Spark|Prakash|   92|2026-09-02|          NULL|        88|
+[info] | Scala|Prakash|   88|2026-09-03|            92|        96|
+[info] |   SQL|Prakash|   96|2026-09-03|            88|      NULL|
+[info] | Spark|   Ravi|   85|2026-09-01|          NULL|        95|
+[info] | Scala|   Ravi|   95|2026-09-02|            85|        82|
+[info] |   SQL|   Ravi|   82|2026-09-02|            95|      NULL|
+[info] +------+-------+-----+----------+--------------+----------+
+[info] --- LATEST RECORD PER STUDENT ---
+[info] +------+-------+-----+----------+-----------+
+[info] |course|student|score| exam_date|latest_rank|
+[info] +------+-------+-----+----------+-----------+
+[info] |   SQL|   Anil|   82|2026-09-04|          1|
+[info] | Spark|   Jaya|   92|2026-09-01|          1|
+[info] | Scala|Prakash|   88|2026-09-03|          1|
+[info] | Scala|   Ravi|   95|2026-09-02|          1|
+[info] +------+-------+-----+----------+-----------+
+[info] ===== CONCEPTS COMPLETED =====
+[info] row_number, rank, dense_rank
+[info] partitionBy and orderBy
+[info] Top 3 students per course
+[info] lag and lead
+[info] Latest record per student
+[success] Total time: 16 s, completed Oct 7, 2026, 4:23:31 AM

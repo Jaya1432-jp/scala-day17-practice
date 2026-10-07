@@ -1,0 +1,13 @@
+course,student,score,exam_date
+Spark,Jaya,92,2026-09-01
+Spark,Ravi,85,2026-09-01
+Spark,Prakash,92,2026-09-02
+Spark,Anil,78,2026-09-02
+Scala,Jaya,88,2026-09-01
+Scala,Ravi,95,2026-09-02
+Scala,Prakash,88,2026-09-03
+Scala,Anil,76,2026-09-03
+SQL,Jaya,90,2026-09-01
+SQL,Ravi,82,2026-09-02
+SQL,Prakash,96,2026-09-03
+SQL,Anil,82,2026-09-04
